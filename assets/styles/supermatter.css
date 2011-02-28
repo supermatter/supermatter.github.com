@@ -1,0 +1,78 @@
+@import url('reset.css');
+
+/**!
+ * supermatter
+ *
+ * Main stylesheet for supermatter. Provides basic styles. Plugin specific 
+ * styles exist in seperate individual stylesheets. IE and other fallback
+ * styles are in other stylesheets.
+ *
+ * @project		supermatter
+ * @version		1.0
+ * @package		Main Stylesheet
+ * @author		Tony Dewan ( tony{at}supermatter.com )
+ * @media		Screen
+ * @copyright	copyright 2010
+ *
+ * @colordef	#FFFFFF; white
+ */
+
+
+/* ---( globals )------------------------------- */ /** @section Globals */
+
+body{
+	color: #434343;
+	font-family:'StMarieThin', Helvetica, arial, sans-serif;
+	user-select:none;
+	-moz-user-select:-moz-none;
+	-webkit-user-select:none;
+	background: #ccc -webkit-gradient(radial, 50% 50%, 800, 50% 50%, 50, from(#ccc), to(#FCFCFC)) center top no-repeat;
+	background-image: -moz-radial-gradient(50% 50% 0deg,circle farthest-side, #FCFCFC, #bbb);}
+	
+#container{
+	margin: 0 auto;}
+	
+	#container > div{
+		position: relative;
+		margin: 0 auto;
+		height: 220px;
+		width: 690px;}
+	
+h1{
+	position: absolute;
+	right: 0;
+	top: 125px;
+	height: 60px;}
+
+h1 img{
+	padding: 7px 0;
+	display:block;}
+	
+h2{
+	position: absolute;
+	right: 0;
+	top: 200px;
+	font:normal 12px/16px Helvetica, arial, sans-serif;
+	font-size: 13px;
+	color:#aaa;}
+	
+h2 a{
+	float:left;
+	color: #aaa;
+	margin:5px;}
+	
+	h2 a:hover{
+		color: #777;}
+	
+p{
+	font-size: 26px;
+	line-height: 42px;
+	margin: 20px auto 0;
+	cursor:default;}
+	
+a{
+	color: #097ce8;
+	text-decoration: none;}
+	
+	a:hover{
+		color: #73afe8;}

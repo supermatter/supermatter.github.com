@@ -1,13 +1,50 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
+<!DOCTYPE html>
+<html>
+<head>
 	<meta charset="utf-8">
-	<title>supermatter.github.com</title> 
-</head> 
- 
-<body> 
-	<div id="container"> 
-		
-	</div> 
-</body> 
+	<title>supermatter</title>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link rel="stylesheet" href="assets/styles/fonts/st-marie-fontfacekit/stylesheet.css">
+	<link rel="stylesheet" href="assets/styles/supermatter.css">
+	<link rel="icon" href="assets/images/favicon.png">
+</head>
+<body>
+	<div id="container">
+		<div>
+		<h1><img src="assets/images/logo-italic.png" alt="supermatter" title="supermatter"></h1>
+		<h2><a href="mailto:"></a>  <a href="http://blog.supermatter.com/">blog.supermatter.com</a>  <a href="http://twitter.com/supermatter">@supermatter</a></h2>
+		<p>We build web software (like <a href="http://clusterr.com/">this</a>.) <a href="http://blog.supermatter.com/">Read our blog</a> to get the behind-the-scenes commentary, or <a href="mailto:">get in touch</a> if you just want to chat.</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$(window).resize(function(){
+				$('#container').css({
+					paddingTop :  ( ( $(window).height() - $('#container > div').outerHeight(true) ) / 2 ) + 'px',
+					width : $(window).width()+'px',
+					height : $(window).height() - ( ( $(window).height() - $('#container > div').outerHeight(true) ) / 2 ) +'px',
+				});
+			}).resize();
+			
+			$('a[href|="mailto:"]').attr('href',"mailto:info@supermatter.com").filter(':empty').html('info@supermatter.com');
+		})
+	</script>
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-17833534-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
 </html>
